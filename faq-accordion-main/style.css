@@ -1,37 +1,68 @@
-
-
-@media only screen and (max-width: 50rem) {
-    body {
-            background-image: url(assets/images/background-pattern-mobile.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    .container {
-        border: none;
-        background-color: aliceblue;
-        position: fixed;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 555px;
-        left: 0;
-        width: 29rem;
-        height: 5rem;
-    }
+body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.container {
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 40px 10px var(--soft-black);
+    border-radius: 15px;
+    padding: 2.5em;
+    margin: 1.2em;
+    max-width: 36rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+@media only screen and (max-width:50rem) {
+    body {
+        background-color: rgb(199, 255, 255);
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40px;
+    }
+
+    
+        
+    
+
+    .container {
+        padding: 1.6em;
+    }
+
+    .star-icon {
+        max-height: 25px;
+        max-width: 25px;
+    }
+
+    .faq-text {
+        font-size: 2em;
+    }
+
+}
+
 
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
 }
 
 .attribution a {
