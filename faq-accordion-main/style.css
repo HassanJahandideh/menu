@@ -1,4 +1,5 @@
 body {
+    background-color: rgb(224, 255, 255);
     background-image: url(./assets/images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -18,7 +19,20 @@ main {
     border-radius: 15px;
     padding: 2.5em;
     margin: 1.2em;
-    max-width: 36rem;
+    width: 21rem;
+}
+
+.faq-text {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    margin-left: 17px;
+    margin-top: -6px; 
+}
+
+.faq-title {
+    display: flex;
 }
 
 img {
@@ -30,41 +44,106 @@ ul {
     list-style: none;
 }
 
+.star-icon {
+    margin-top: -25px;
+    margin-left: -10px;
+}
+
+.q-text {
+    margin-left: -50px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 670;
+    font-style: normal;
+    padding: px;
+}
+.q-text:hover {
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.second-line {
+    margin-left: -49px;
+}
+
+.q-question {
+    padding: 10px;
+}
+
+.answer-txt {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(148, 148, 148);
+    font-size: 15px;
+    margin-left: -40px;
+    display: none;
+}
+
+.active {
+    grid-template-rows: 1fr;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    background-image: url(./assets/images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    cursor: pointer;
+    min-height: 28px;
+    transition: background-image 200ms ease-in-out;
+    min-width: 28px;
+    float: right;
+}
+
+
+
+.faq-toggle-minus {
+    background-image: url(./assets/images/icon-minus.svg);
+}
+
+hr {
+    height: 0px;
+    width: 320px;
+    background-color: rgb(255, 252, 252);
+    margin-left: -40px;
+    border: 1px solid rgb(238, 233, 233);
+}
+
 @media only screen and (max-width:50rem) {
     body {
-        background-color: rgb(199, 255, 255);
+        background-color: rgb(224, 255, 255);
         background-image: url(./assets/images/background-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 40px;
     }
 
-    
-        
-    
+    hr {
+        width: 320px;
+    }
+
+    .faq-text {
+        margin-left: 22px;
+        margin-top: -6px;
+    }
 
     .container {
         padding: 1.6em;
+        width: 19rem;
     }
 
     .star-icon {
         max-height: 25px;
         max-width: 25px;
+        margin-top: 1px;
+        margin-left: -3px;
     }
 
     .faq-text {
         font-size: 2em;
     }
 
-}
-
-
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
